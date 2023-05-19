@@ -1,27 +1,16 @@
-# ilir
+## README Builder
 
-  ## Description
-  yes
-  
-  ## Table of Contents
-  yes
+# Description:
+The README Builder is a tool designed to quickly create a high-quality and professional README file for a new project. 
+Upon running the application, you will be prompted for information about your project, which will then be used
+to automatically generate a README file. 
 
-  ## Installation
-  yes
-
-  ## Usage
-  yes
-
-  ## License
-  
-    
-    The application is covered under the following license:
-    
-    [apache](https://choosealicense.com/licenses/apache)
-
-  ## Tests
-  yes
-
-  
-    
-    
+# README File Information
+- Project title
+- Description
+- Table of contents
+- Installation
+- Usage
+- License
+- Contributing
+- Testing
