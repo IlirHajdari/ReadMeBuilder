@@ -118,6 +118,30 @@ const userQuestions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "github",
+    message: "Please enter you Github username: ",
+    validate: (githubInput) => {
+      if (githubInput.trim() === " ") {
+        return "Sorry, but you need to provide a Github username!";
+      } else {
+        return true;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Please enter your email address.",
+    validate: (emailInput) => {
+      if (emailInput.trim() === " ") {
+        return "Sorry, but you need to provide an email address!";
+      } else {
+        return true;
+      }
+    },
+  },
 ];
 
 const init = () => {
@@ -125,10 +149,6 @@ const init = () => {
     return readmeData;
   });
 };
-
-// inquirer.prompt(userQuestions).then((readmeData) => {
-//   console.log("You have chosen to use the ${answers.license} license.");
-// });
 
 // Writing user input data to the file
 const writeFile = (fileData) => {
@@ -145,14 +165,6 @@ const writeFile = (fileData) => {
     });
   });
 };
-
-// fs.readFile("README.md", "utf-8", (error, data) =>
-//   error ? console.error(error) : console.log(data)
-// );
-
-// fs.writeFile("README.md", process.argv[2], (err) =>
-//   err ? console.error(err) : console.log("Nice!")
-// );
 
 // Initialize app function call
 init()

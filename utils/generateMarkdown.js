@@ -51,7 +51,15 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
 
+  ## Contribution
+
   ${data.contributeConfirmation ? `## Contribution\n${data.contribute}` : ""}
+
+  ## Questions
+  For any questions, please reach out to me on [GitHub](https://github.com/${
+    data.github
+  }) or
+  email me at ${data.email}.
     
     `;
 }
