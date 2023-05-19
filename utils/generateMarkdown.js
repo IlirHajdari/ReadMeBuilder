@@ -51,8 +51,6 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
 
-  ## Contribution
-
   ${data.contributeConfirmation ? `## Contribution\n${data.contribute}` : ""}
 
   ## Questions
