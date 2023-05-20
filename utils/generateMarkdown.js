@@ -54,9 +54,6 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## License
-  ${renderLicenseSection(data.license)}
-
   ## Tests
   ${data.test}
   
