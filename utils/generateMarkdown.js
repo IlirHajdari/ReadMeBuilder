@@ -33,11 +33,20 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## License
+  ${renderLicenseSection(data.license)}
+
   ## Description
-  ${data["table of contents"]}
-  
+  ${data.description}
+
+
   ## Table of Contents
-  ${data["table of contents"]}
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Licesnse](#license)
+  - [Tests](#tests)
+  ${data.contributeConfirmation ? `- [Contribution](#contribution)` : ""}
 
   ## Installation
   ${data.installation}
@@ -50,6 +59,7 @@ function generateMarkdown(data) {
 
   ## Tests
   ${data.test}
+  
 
   ${data.contributeConfirmation ? `## Contribution\n${data.contribute}` : ""}
 
